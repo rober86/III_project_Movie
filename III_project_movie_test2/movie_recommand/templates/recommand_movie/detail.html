@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>{% load staticfiles %}
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>AB103 Movie Recommandation - {{data.title}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/main_detail.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="preview">
+        <div class="inner">
+            <div class="content">
+                <h1>AB103 Movie Recommandation</h1>
+                <h2>喜歡我們的推薦嗎？請給我們一個讚！</h2>
+            </div>
+            <a href="/AB103Movie/" class="button hidden"><span>Let's Go</span></a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="preview" class="vertical">
+        <div class="inner">
+            <div class="image fit" id="posterImage">
+                <img src={{data.poster}} alt="" />
+            </div>
+
+            <div class="content">
+                <header>
+                    <h2>{{data.title}}</h2>
+                </header>
+                <div id="word-tag">
+                    <div class="icon fa-bullhorn"> PTT 關聯<br></div>
+                    <div id='tag-cloud'></div>
+                </div>
+                <ul class="top-list">
+                    <li><a href="#" class="icon fa-heart"> 收藏</a></li>
+                    <li><a href="#" class="icon fa-star"> 評分</a></li>
+                    <li><a href="#" class="icon fa-film"> 購票</a></li>
+                </ul>
+                <br><br>
+                <section>
+                    <div class='icon fa-gratipay'> 總分: {{data.rating}}</div>
+                    <div class='icon fa-calendar'> 上映日期：{{data.release_date}}</div>
+                    <!-- <div class='icon fa-clock-o'>  片長：133分鐘</div> -->
+                    <div class='icon fa-user'> 演員：{{data.actor}}</div>
+                    <div class='icon fa-user'> 導演：{{data.director}}</div>
+                    <div class='icon fa-user'> 編劇：{{data.writer}}</div>
+                    <div class='icon fa-paperclip'> 類型: {{data.types}} </div>
+                    <div class='icon fa-imdb'><a href={{data.IMDB_link}} style="text-decoration: none" Target="_new">IMDB</a></div>
+                </section>
+                <br>
+                <div class='icon fa-caret-square-o-right'> 劇情簡介：<br></div>
+                <div class='intro'>{{data.intro}}</div>
+
+                <br>
+
+                <div class=''>喜歡這部電影的人也喜歡：</div>
+                <section class="center slider" id="mainsection" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+                    <!--動態新增-->
+                    <!--<div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>
+                    <div>
+                        <img src="/static/posters/px_ffuk83183660_0026.jpg">
+                    </div>-->
+                </section>
+            </div>
+            <!-- class="content" -->
+        </div>
+        <!-- <class="inner"> -->
+    </div>
+    <!-- id="preview" -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+        <div class="inner">
+            <div class="content">
+                <h3 id="tc">關於我們</h3>
+                <p id="tc">
+                    8個人的團隊 利用在資策會大數據班學到的<br />我們實作了這個電影推薦網<br />希望您們會喜歡<br />如果對我們有興趣 請聯絡我們
+                </p>
+            </div>
+            <div class="copyright">
+                <h3 id="tc">聯絡我們</h3>
+                <ul class="icons">
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                </ul>
+                &copy; III AB103 TEAM MOVIE
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/jquery.min.js'%}"></script> -->
+    <script src="{% static 'js/skel.min.js'%}"></script>
+    <script src="{% static 'js/util.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+    <script src="{% static 'js/jquery.svg3dtagcloud.min.js'%}"></script>
+
+    <!-- <script src="{% static 'js/main_introduction.js'%}"></script> -->
+    <script src="{% static 'js/detail.js'%}"></script>
+    <script src="{% static 'js/slick.js'%}"></script>
+
+    <script>
+        $(document).ready(function() {
+
+
+            var entries = [
+                {% for key, value in data.reviews.items %}
+                {label: '{{key}}',
+                  url: '{{value}}',
+                  target: '_blank'},
+                {% endfor %}
+
+                /*{ label: 'Back to top', url: 'http://www.jqueryscript.net/tags.php?/Back%20to%20top/', target: '_blank' },
+                { label: 'Bootstrap', url: 'http://www.jqueryscript.net/tags.php?/Bootstrap/', target: '_blank' },
+                { label: 'Carousel', url: 'http://www.jqueryscript.net/tags.php?/carousel/', target: '_blank' },
+                { label: 'Countdown', url: 'http://www.jqueryscript.net/tags.php?/countdown/', target: '_blank' },
+                { label: 'Dropdown Menu', url: 'http://www.jqueryscript.net/tags.php?/Drop%20Down%20Menu/', target: '_blank' },
+                { label: 'CodePen', url: 'http://codepen.io/', target: '_blank' },
+                { label: 'three.js', url: 'http://threejs.org/', target: '_blank' },
+                { label: 'Form Validation', url: 'http://www.jqueryscript.net/tags.php?/form%20validation/', target: '_blank' },
+                { label: 'JS Compress', url: 'http://jscompress.com/', target: '_blank' },
+                { label: 'TinyPNG', url: 'https://tinypng.com/', target: '_blank' },
+                { label: 'Can I Use', url: 'http://caniuse.com/', target: '_blank' },
+                { label: 'URL shortener', url: 'https://goo.gl/', target: '_blank' },
+                { label: 'Grid Layout', url: 'http://www.jqueryscript.net/tags.php?/grid%20layout/', target: '_blank' },
+                { label: 'Twitter', url: 'https://twitter.com/niklaswebdev', target: '_blank' },
+                { label: 'deviantART', url: 'http://nkunited.deviantart.com/', target: '_blank' },
+                { label: 'Gulp', url: 'http://gulpjs.com/', target: '_blank' },
+                { label: 'Browsersync', url: 'https://www.browsersync.io/', target: '_blank' },
+                { label: 'GitHub', url: 'https://github.com/', target: '_blank' },
+                { label: 'Shadertoy', url: 'https://www.shadertoy.com/', target: '_blank' },
+                { label: 'Tree View', url: 'http://www.jqueryscript.net/tags.php?/tree%20view/', target: '_blank' },
+                { label: 'jsPerf', url: 'http://jsperf.com/', target: '_blank' },
+                { label: 'Foundation', url: 'http://foundation.zurb.com/', target: '_blank' },
+                { label: 'CreateJS', url: 'http://createjs.com/', target: '_blank' },
+                { label: 'Velocity.js', url: 'http://julian.com/research/velocity/', target: '_blank' },
+                { label: 'TweenLite', url: 'https://greensock.com/docs/#/HTML5/GSAP/TweenLite/', target: '_blank' },
+                { label: 'jQuery', url: 'https://jquery.com/', target: '_blank' },
+                { label: 'Notification', url: 'http://www.jqueryscript.net/tags.php?/Notification/', target: '_blank' },
+                { label: 'Parallax', url: 'http://www.jqueryscript.net/tags.php?/parallax/', target: '_blank' }
+				*/
+            ];
+
+            var settings = {
+
+                entries: entries,
+                width: 250,
+                height: 250,
+                radius: '65%',
+                radiusMin: 75,
+                bgDraw: true,
+                bgColor: '#fff',
+                opacityOver: 1.00,
+                opacityOut: 0.05,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: 0.5, //2
+                fontFamily: 'Oswald, Arial, sans-serif',
+                fontSize: '15',
+                fontColor: '#090C9B',
+                fontWeight: 'normal', //bold
+                fontStyle: 'normal', //italic
+                fontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                fontToUpperCase: true
+
+            };
+
+            //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+            $('#tag-cloud').svg3DTagCloud(settings);
+
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</body>
+
+</html>

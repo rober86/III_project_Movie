@@ -805,7 +805,7 @@ input[type="radio"]:focus+label:before {
 .icon {
     text-decoration: none;
     border-bottom: none;
-    position: relative;
+    /* position: relative; */
 }
 
 .icon:before {
@@ -1181,7 +1181,7 @@ ul.alt li {
 }
 
 #preview .content header h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #134074;
 }
 
@@ -1772,3 +1772,45 @@ aside.showup {
     margin: 0;
     border-radius: 30px;
 }
+
+/* Top List */	
+#word-tag {
+	float:right;
+	z-index:-1;
+}
+
+/* Movie Intro */			
+.intro {
+	border:1px solid #cccccc;
+	margin: 0px;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	clear: right;
+}
+
+/* Top List */
+
+ul.top-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		ul.top-list li a {
+			/* background: rgba(255, 255, 255, 0.075); */
+			border-radius: 4px;
+			/* color: rgba(255, 255, 255, 0.5) !important; */
+			margin-bottom: 0;
+			padding: .5em 1em;
+			/* width: 100%; */
+			float:left;
+		}
+
+			ul.top-list li a:hover {
+				background: #693dcc;
+				color: #fff;
+				float:left;
+			}

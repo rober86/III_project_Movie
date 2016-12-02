@@ -56,18 +56,6 @@ function doFirst() {
         aside.toggleClass('showup');
     });
 
-    // // send POST by ajax // ajax should use in the next page
-    // $(go).click(function(e) {
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "/AB103Movie/introduction",
-    //         data: chooseList,
-    //         success: function() {
-    //             alert('OK');
-    //         }
-    //     })
-    // }); // end of $(go).click(function(e) {
-
 }
 window.addEventListener('load', doFirst, false);
 
