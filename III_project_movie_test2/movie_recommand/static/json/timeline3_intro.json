@@ -1,0 +1,283 @@
+{
+    "title": {
+        "media": {
+          "url": "/static/posters/ComingSoon.jpg"
+        },
+        "text": {
+          "headline": "近期即將上映電影 <br/> 2016/12 - 2017/01",
+          "text": "<p>接下來的兩個月<br/>有什麼好電影可以看呢？<br/> 一起來看看吧！</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "https://youtu.be/7WYr3UfH0d8",
+          "caption": "再見瓦城"
+        },
+        "start_date": {
+          "month": "12",
+          "day": "9",
+          "year": "2016"
+        },
+        "text": {
+          "headline": "再見瓦城<br/>The Road to Mandalay",
+          "text": "<p>第53屆金馬獎入圍8項大獎，《冰毒》導演趙德胤執導，一部跨國製作的愛情電影，將鏡頭由緬甸轉向泰國曼谷，刻劃男女在城市底層莫可奈何的生活與分歧的價值觀，讓愛情漸漸走向難以挽回的悲劇。</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/9kZh5A98pic",
+          "caption": "一週八天的歲月：披頭時代"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "9",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "一週八天的歲月：披頭時代<br/>The Beatles: Eight Days a Week",
+          "text": "1966年8月披頭四停止巡迴時，1962年至1966年這四年期間他們已於全球表演超過1400場演唱會。披頭四掀起的文化風潮史稱「披頭熱」，前無古人後無來者的狂熱氣氛，永遠改變了音樂工業，更成為經典。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/Gnu_vsy2ziw",
+          "caption": "黑熊森林"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "9",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "黑熊森林<br/>Black Bear Forest",
+          "text": "一部訴說人與大自然互動的山林故事。電影藉黑熊研究學者黃美秀與團隊的腳步，揭開了台灣黑熊的神秘面紗，但也揭示台灣黑熊悲情的一面；時至今日，在監測攝影下，被捕捉、斷肢或斷掌的黑熊苦難未曾改變。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/emxIXvGf0JU",
+          "caption": "星際大戰外傳：俠盜一號"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "14",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "星際大戰外傳：俠盜一號<br/>Rogue One: A Star Wars Story",
+          "text": "電影由蓋瑞斯愛德華執導，明星卡司雲集，包含費莉絲蒂瓊斯、麥德米克山、里茲阿邁德、迪耶哥路，以及亞洲演員甄子丹、姜文加入反抗大軍。外傳故事講述銀河帝國建立後，一群反抗軍計劃偷走死星計劃書的行動。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/P50OjC1gmg4",
+          "caption": "最美的安排"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "15",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "最美的安排<br/>Collateral Beauty",
+          "text": "威爾史密斯、愛德華諾頓、凱特溫斯蕾和海倫米蘭主演。一位傑出且熱愛生命、創意無限的廣告人，在痛失愛女後變得厭世。他在最痛徹心扉的時刻重新探尋三個元素，時間、愛與死亡，而他的同事也決定幫助他尋找人生答案。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/-ncHFvyxUCg",
+          "caption": "遇見街貓BOB"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "16",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "遇見街貓BOB<br/>A Street Cat Named Bob",
+          "text": "遇見你之前，我是一個人；遇見你之後，我們是一家人。《極地奇蹟》羅傑史波提斯伍德執導，《永不屈服》路克索德威飾演，英國最知名的流浪街貓Bob與他主人的感動故事，躍上大螢幕。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/Hu5ZClP1srM",
+          "caption": "星際過客"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "21",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "星際過客<br/>Passengers(2016)",
+          "text": "未來世界利用太空船航行在銀河系星球之間，為防止旅客時間流逝，星際旅客會在漫長的航行中進行冬眠，但兩名移民星艦的乘客，休眠艙竟在抵達前90年提早開啟，兩人試圖解開背後的玄機，過程中無可自拔地愛上彼此。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/_-Bo2zT8J1c",
+          "caption": "刺客教條"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "28",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "刺客教條<br/>Assassin's Creed",
+          "text": "史上暢銷電玩終極大銀幕呈現。「萬磁王」麥克法斯賓達製作、主演，一人分飾兩角，解密基因記憶，穿梭時空，在過去與現在展開終極對決。「聖殿騎士團」與死敵「刺客」兩大神秘組織的千年戰爭燃燒至現代社社會。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/OtKmpbQxh88",
+          "caption": "長城"
+        },
+        "start_date": {
+            "month": "12",
+            "day": "29",
+            "year": "2016"
+        },
+        "text": {
+          "headline": "長城<br/>The Great Wall",
+          "text": "張藝謀執導，麥特戴蒙、威廉達佛、劉德華、彭于晏主演。圍繞在以長城展開的史詩巨作，將以全新的視角解開長城建造的未解之謎。菁英部隊為了人類存亡，在長城上與敵人一決生死。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/XP948aOtuDo",
+          "caption": "怪獸卡車"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "13",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "怪獸卡車<br/>Monster Trucks",
+          "text": "《冰原歷險記》導演克里斯威巨執導，《X戰警：未來昔日》盧卡斯提爾主演。一場發生在油井鑽探現場的意外，一隻地底生物得以竄出地表，鑽入高中生崔普的舊卡車中，成為卡車引擎，展開奇異的人與怪獸冒險之旅。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/k6bqMvYWokw",
+          "caption": "夜行人生"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "13",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "夜行人生<br/>Live by Night",
+          "text": "李奧納多狄卡皮歐監製，金獎導演班艾佛列克自導、自演之作。犯罪猖獗、黑白難分的1920年代，波士頓警局警監的兒子喬考夫林，被金錢與權力誘惑，拋開父親從小給的耳提面命、成為一名不法之徒。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/ltoGePaeeVQ",
+          "caption": "拆彈少年"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "13",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "拆彈少年<br/>Land of Mine",
+          "text": "2017丹麥角逐奧斯卡最佳外語片代表、2016 鹿特丹影展觀眾票選。德國少年兵在丹麥海邊被迫以血肉之軀親身犯險，將眼前沙灘中所埋的數萬枚地雷全清除乾淨，才得以重回睽違多年的家園。"
+        }
+      },
+      {
+        "media": {
+          "url": "https://youtu.be/BCTVEUdaYJI",
+          "caption": "限制級戰警：重返極限"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "20",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "限制級戰警：重返極限<br/>xXx: The Return of Xander Cage",
+          "text": "2002年《限制級戰警》續集，《獵殺第四行者》D.J.卡魯索執導，馮迪索、甄子丹、東尼嘉主演。桑德凱吉招募了熱愛刺激的新夥伴，組成超越極限的新團隊展開行動，同時他也發現自己將陷入世界各國政府高層陰謀。"
+        }
+      },
+      {
+        "media": {
+          "url": "/static/posters/next/1020002.jpg",
+          "caption": "名偵探柯南 變小的名偵探"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "20",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "名偵探柯南 變小的名偵探<br/>DETECTIVE CONAN Episode 'ONE'",
+          "text": "20週年大放送，全新的柯南特別篇。揭露以往未能公開的懸案：讓柯南、灰原哀縮小的「APTX4869」藥物的秘辛與琴酒、新一第一次交手的過程。備受關注的人氣角色的行動及想法將陸續曝光。"
+        }
+      },
+      {
+        "media": {
+          "url":"https://youtu.be/48B9wSy4kPg",
+          "caption": "幸福不設限"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "20",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "幸福不設限<br/>About Ray",
+          "text": "描繪女性變性為男性過程中的自我身分探索，以輕鬆幽默手法點出現代家庭面臨的種種挑戰！《霓虹惡魔》艾兒芬妮主演。正值16歲的青春少女，發現體內困著男孩靈魂，當他/她決定勇於變性，家庭卻面臨分崩離析。"
+        }
+      },
+      {
+        "media": {
+          "url":"https://youtu.be/KbCPnhDgtxc",
+          "caption": "惡靈古堡：最終章"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "26",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "惡靈古堡：最終章<br/>Resident Evil: The Final Chapter",
+          "text": "導演保羅安德森夫妻檔再續《惡靈古堡》系列作品第六部。人類存亡的最後關鍵艾莉絲，將帶領天譴日的倖存者重回一切的源頭──浣熊市，對抗保護傘公司佈下的強大軍力。"
+        }
+      },
+      {
+        "media": {
+          "url":"https://youtu.be/0PjI4AyCEkw",
+          "caption": "海洋奇緣"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "26",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "海洋奇緣<br/>Moana",
+          "text": "《小美人魚》與《阿拉丁》金獎導演組合，迪士尼第56部動畫長片。故事發生在南太平洋島嶼，莫娜與族人所生活的土地發生變化，莫娜必須尋找到半神人毛伊，請他歸還海洋之心，讓生態恢復平衡，一切恢復原狀。"
+        }
+      },
+      {
+        "media": {
+          "url":"https://youtu.be/D25nyRCKhYU",
+          "caption": "52 Hz, I Love You"
+        },
+        "start_date": {
+            "month": "01",
+            "day": "26",
+            "year": "2017"
+        },
+        "text": {
+          "headline": "52 Hz, I Love You",
+          "text": "魏德聖睽違9年音樂愛情電影，重回現代生活的幽默與感動。「孤單，只是故事的開始」，沒有嘗過愛情滋味的兩人因為一場意外遇上了，這對攜手相伴十年的情侶，他們的愛情旋律卻似乎隨柴米油鹽而逐漸消逝。"
+        }
+      }
+    ]
+}

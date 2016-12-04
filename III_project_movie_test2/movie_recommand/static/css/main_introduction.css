@@ -1,12 +1,31 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);*/
 
 /*
 	Radius by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+
+.wrapper header#introHeader {
+    margin-bottom: 0;
+    color: #041625;
+    margin-bottom: 0px;
+}
+
+.wrapper.style2.introHeader {
+    padding: 4em 0 1em 0;
+    color: #041625;
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+
+.wrapper.style2 h2#forh2font {
+    color: #041625;
+    margin-bottom: 10px;
+    font-family: 'cwTeXYen', sans-serif;
+}
 
 
 /*chinese*/
@@ -952,6 +971,7 @@ ul.alt li {
 #preview {
     position: relative;
     padding: 1em;
+    height: 450px;
 }
 
 #preview .inner {
@@ -2848,7 +2868,7 @@ table.alt tbody tr td {
     width: 100%;
     height: 100%;
     display: block;
-    background-image: url(../../images/bg.jpg);
+    /*background-image: url(../../images/bg.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.35;
@@ -3093,6 +3113,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 {
+    font-family: 'cwTeXYen', sans-serif;
     background-color: #041625;
     color: #c0c5c9;
 }
@@ -3104,6 +3125,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style2 a {
+    font-family: 'cwTeXYen', sans-serif;
     color: #c1c7cd;
 }
 
@@ -3122,6 +3144,7 @@ table.alt tbody tr td {
 .wrapper.style2 h4,
 .wrapper.style2 h5,
 .wrapper.style2 h6 {
+    font-family: 'cwTeXYen', sans-serif;
     color: #ffffff;
 }
 

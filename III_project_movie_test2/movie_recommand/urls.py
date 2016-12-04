@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^typelists', views.movie_types, name = 'movie_types'),
     # there will be some query string after recommandlists, so don't use $
     url(r'^recommandlists', views.recommandlists, name = 'recommandlists'),
+    url(r'^statistic', views.statistic, name = 'statistic'),
     url(r'^$', views.recommand_movie, name = 'recommand_movie'),
 ]

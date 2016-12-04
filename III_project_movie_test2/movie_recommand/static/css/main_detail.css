@@ -1,12 +1,17 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);*/
 
 /*
 	Radius by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+
+/*hide cloud*/
+div#word-tag.hide {
+    display: none;
+}
 
 
 /*chinese*/
@@ -166,7 +171,7 @@ body,
 input,
 select,
 textarea {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 13pt;
     font-weight: 300;
     line-height: 1.65;
@@ -303,7 +308,7 @@ blockquote {
 code {
     border-radius: 4px;
     border: solid 1px;
-    font-family: "Courier New", monospace;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 0.9em;
     margin: 0 0.25em;
     padding: 0.25em 0.65em;
@@ -311,7 +316,7 @@ code {
 
 pre {
     -webkit-overflow-scrolling: touch;
-    font-family: "Courier New", monospace;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 0.9em;
     margin: 0 0 2em 0;
 }
@@ -1155,7 +1160,7 @@ header p {
 
 #header .inner .content h1 {
     font-size: 4em;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'cwTeXYen', sans-serif;
     margin: 0 0 .25em 0;
     color: #fff;
 }
@@ -1620,7 +1625,7 @@ body,
 input,
 select,
 textarea {
-    font-family: "Signika", sans-serif;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 13pt;
     font-weight: 300;
     line-height: 1.65;
@@ -1780,7 +1785,7 @@ blockquote {
 code {
     border-radius: 4px;
     border: solid 1px;
-    font-family: "Courier New", monospace;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 0.9em;
     margin: 0 0.25em;
     padding: 0.25em 0.65em;
@@ -1788,7 +1793,7 @@ code {
 
 pre {
     -webkit-overflow-scrolling: touch;
-    font-family: "Courier New", monospace;
+    font-family: 'cwTeXYen', sans-serif;
     font-size: 0.9em;
     margin: 0 0 2em 0;
 }
@@ -3416,13 +3421,13 @@ table.alt tbody tr td {
 
 
 
-/* Top List */	
+/* Top List */
 #word-tag {
 	float:right;
 	z-index:1;
 }
 
-/* Movie Intro */			
+/* Movie Intro */
 .intro {
 	/* border:1px solid #cccccc; */
 	margin: 0px;

@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);*/
 
 /*
 	Radius by TEMPLATED
@@ -1773,13 +1773,13 @@ aside.showup {
     border-radius: 30px;
 }
 
-/* Top List */	
+/* Top List */
 #word-tag {
 	float:right;
 	z-index:-1;
 }
 
-/* Movie Intro */			
+/* Movie Intro */
 .intro {
 	border:1px solid #cccccc;
 	margin: 0px;

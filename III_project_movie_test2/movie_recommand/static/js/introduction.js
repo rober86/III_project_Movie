@@ -30,7 +30,7 @@ function createImages(posters) {
     // recommand movies = posters.split(' ')[1] and split by , get reaommand movies list
     posterimages = posters.split(' ')[1].split(',');
 
-    for (i = 0; i < (posterimages.length) - 6; i++) {
+    for (i = 0; i < posterimages.length; i++) {
 
         // create div tag for each movie
         newtag = document.createElement('div');
@@ -77,6 +77,7 @@ function createImages(posters) {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     autoplay: true,
+                    autoplaySpeed:1000,
                 }); //end of $(".center").slick({
             } // end of if ($(img).is(':visible')) {
     } // end of switch (document.readyState) {
@@ -89,6 +90,7 @@ function createImages(posters) {
                 url: "./typelists", // http://127.0.0.1:8000/AB103Movie/typelists?movielist=liststring
                 data: { typelist: posterimages[i] }, // data = each movie
                 success: function(data) {
+                    // console.log(data);
                     createType(data, len); // if get response successfully, sent return data to createType function
                 }
             }); // end of  $.ajax({
@@ -108,7 +110,6 @@ function createType(type, len) {
         } else {
             typeInDict[movieTypes[i].trim()] = 1;
         }
-
     }; // end of for (i = 1; i < movieTypes.length; i++) {
 
     // typeInDict = {傢庭:2,傳記:1,冒險:7,劇情:8,動作:3,動畫:3,喜劇:3,奇幻:6,情色:1,愛情:3,懸疑:1,歌舞:1,科幻:3,驚悚:1}
@@ -127,7 +128,7 @@ function createType(type, len) {
     // Create a new array with only the first 3 items
     typeItems = items.slice(0, 3); // [ [ 劇情:8 ], [ 冒險:7 ], [ 奇幻:6 ] ]
 
-    
+
 
     count += 1; // count number for calling showTypesOnThePage()
     //    console.log(items.slice(0, 3));
@@ -137,10 +138,10 @@ function createType(type, len) {
         //        console.log(typeItems);
 
         var typeforsearch = "";
-        for (i = 0; i < typeItems.length; i++){       
+        for (i = 0; i < typeItems.length; i++){
             typeforsearch =  typeforsearch + typeItems[i][0] + ' '
         };
-        console.log(typeforsearch);
+        // console.log(typeforsearch);
         $.ajax({
             url : "./type_recommand",
             data : { three_type : typeforsearch},
@@ -161,7 +162,7 @@ function showTypesOnThePage(typeItems) {
     for (i = 0; i < typeItems.length; i++) {
         // <a href="#" data-tab="tab-1" class="active">
         newaTag = document.createElement('a');
-        newaTag.href = "#";    
+        newaTag.href = "#";
         newaTag.innerText = typeItems[i][0] + "類";
         var fordatatab = "tab-" + (i + 1);
         newaTag.setAttribute('data-tab', fordatatab);
@@ -209,46 +210,80 @@ function showTypesOnThePage(typeItems) {
 }
 
 function createTypePosters(lists){
-    
+
     var listsOfType = lists.split("/");
 
     for (i = 0; i < listsOfType.length; i++) {
         var typePosters = listsOfType[i].split(",");
-        for (j = 0; j< (typePosters.length)-1; j++) {
+        if (typePosters.length >= 10){
+            for (j = 0; j< 9; j++) {
 
-            
+                newaimg = document.createElement('img');
+                newaimg.src = "/static/posters/" + typePosters[j] + ".jpg";
 
-            newaimg = document.createElement('img');
-            newaimg.src = "/static/posters/" + typePosters[j] + ".jpg";
+                innerdiv = document.createElement('div');
+                innerdiv.setAttribute('class', "arrow");
 
-            innerdiv = document.createElement('div');
-            innerdiv.setAttribute('class', "arrow");
+                middlediv = document.createElement('div');
+                middlediv.setAttribute('class', "image fit");
 
-            middlediv = document.createElement('div');
-            middlediv.setAttribute('class', "image fit");
+                innerspan = document.createElement('span');
+                innerspan.innerText = "Click Me";
 
-            innerspan = document.createElement('span');
-            innerspan.innerText = "Click Me";
+                middlea = document.createElement('a');
+                middlea.href = "/AB103Movie/introduction/detail?movieid=" + typePosters[j];
+                middlea.setAttribute('class', "link");
 
-            middlea = document.createElement('a');
-            middlea.href = "/AB103Movie/introduction/detail?movieid=" + typePosters[j];
-            middlea.setAttribute('class', "link");
+                outterdiv = document.createElement('div');
+                outterdiv.setAttribute('class', "video col");
 
-            outterdiv = document.createElement('div');
-            outterdiv.setAttribute('class', "video col");
+                middlediv.appendChild(newaimg);
+                middlediv.appendChild(innerdiv);
 
-            middlediv.appendChild(newaimg);
-            middlediv.appendChild(innerdiv);
+                middlea.appendChild(innerspan);
 
-            middlea.appendChild(innerspan);
+                outterdiv.appendChild(middlediv);
+                outterdiv.appendChild(middlea);
 
-            outterdiv.appendChild(middlediv);
-            outterdiv.appendChild(middlea);
+                var whichtab = "tab" + (i+1);
+                document.getElementById(whichtab).appendChild(outterdiv);
+            } // end of  for (j = 0; j< 9; j++) {
 
-            var whichtab = "tab" + (i+1);
-            document.getElementById(whichtab).appendChild(outterdiv);
+        } else {
+            for (j = 0; j< (typePosters.length)-1; j++) {
+
+                newaimg = document.createElement('img');
+                newaimg.src = "/static/posters/" + typePosters[j] + ".jpg";
+
+                innerdiv = document.createElement('div');
+                innerdiv.setAttribute('class', "arrow");
+
+                middlediv = document.createElement('div');
+                middlediv.setAttribute('class', "image fit");
+
+                innerspan = document.createElement('span');
+                innerspan.innerText = "Click Me";
+
+                middlea = document.createElement('a');
+                middlea.href = "/AB103Movie/introduction/detail?movieid=" + typePosters[j];
+                middlea.setAttribute('class', "link");
+
+                outterdiv = document.createElement('div');
+                outterdiv.setAttribute('class', "video col");
+
+                middlediv.appendChild(newaimg);
+                middlediv.appendChild(innerdiv);
+
+                middlea.appendChild(innerspan);
+
+                outterdiv.appendChild(middlediv);
+                outterdiv.appendChild(middlea);
+
+                var whichtab = "tab" + (i+1);
+                document.getElementById(whichtab).appendChild(outterdiv);
+            } // end of  for (j = 0; j< 9; j++) {
         }
-    }
+    } // end of for (i = 0; i < listsOfType.length; i++) {
 }
 
 window.addEventListener('load', doFirst, false);
