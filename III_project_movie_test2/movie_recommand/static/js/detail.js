@@ -19,8 +19,8 @@ function createRecImages(posters, moviederid) {
     // return data contains 3 userchoosen + 12 recommand movies, seperate by space
     // recommand movies = posters.split(' ')[1] and split by , get reaommand movies list
     posterimages = posters.split(',');
-    console.log(posterimages);
-    console.log(moviederid);
+    // console.log(posterimages);
+    // console.log(moviederid);
 
     for (i = 0; i < 12; i++) {
 
@@ -50,7 +50,7 @@ function createRecImages(posters, moviederid) {
 
         } // end of for (i = 0; i < posterimages.length; i++) {
     }
-    
+
     // check document state
     switch (document.readyState) {
         case "loading": // loading state

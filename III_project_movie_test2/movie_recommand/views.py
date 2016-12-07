@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from movie_recommand.models import final, thirdmovie, recommand, douban, movie_type
+from movie_recommand.models import final, recommand, douban, movie_type
 from django.contrib.staticfiles.storage import staticfiles_storage
 import random, string
 from django.http import HttpResponse
@@ -21,8 +21,10 @@ def recommandlists(request):
     movielists = request.GET['movielist']
     compareLists = movielists + ' '
 
+
     # query db for recommand lists by user choosen movie
     movie_lists = recommand.objects.get(movieLists__contains = compareLists)
+    
     # get values from query object
     movies = movie_lists['movieLists']
     # return values by response
@@ -114,7 +116,7 @@ def third(request):
     o = 0
     new_detail = []
     while o < len(returndata):
-        ll = [[g.split(","),1]for g in detail_movies.split("/")[1].split("|")]
+        ll = [[g.split(","),1]for g in detail_movies.split("/")[o].split("|")]
         new_detail += ll
         o += 1
 

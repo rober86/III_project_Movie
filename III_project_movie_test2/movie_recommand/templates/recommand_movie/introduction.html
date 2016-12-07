@@ -29,6 +29,7 @@
             <div class="content">
                 <h1>AB103 Movie Recommandation</h1>
                 <h2>喜歡我們的推薦嗎？請給我們一個讚！</h2>
+                <a href="#" class="button big alt"><span>Let's Go</span></a>
             </div>
             <a href="/AB103Movie/" class="button hidden"><span>Let's Go</span></a>
         </div>
@@ -94,7 +95,7 @@
 
     <!-- Three -->
 
-    <div id='timeline-embed' style="width: 100%; height: 700px"></div>
+    <div id='timeline-embed' style="width: 100%; height: 100vh"></div>
 
     <!-- Two -->
     <section class="wrapper style2">
@@ -208,8 +209,6 @@
         // a suitable JSON object
         window.timeline = new TL.Timeline('timeline-embed', timeline_json, additionalOptions);
 
-        var textcolor = document.querySelector("h2.tl-headline");
-        textcolor.style.backgroundColor = "red";
     </script>
 </body>
 

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link title="timeline-styles" rel="stylesheet" href="{% static 'css/font.cwtexyen.css' %}">
-    
+
     <link rel="stylesheet" href="{% static 'css/main_detail.css' %}" />
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
 </head>
@@ -41,15 +41,18 @@
                 <header>
                     <h2>{{data.title}}</h2>
                 </header>
-                <div id="word-tag">
-                    <div class="icon fa-bullhorn"> PTT 關聯<br></div>
-                    <div id='tag-cloud'></div>
-                </div>
+
                 <ul class="top-list">
                     <li><a href="#" class="icon fa-heart"> 收藏</a></li>
                     <li><a href="#" class="icon fa-star"> 評分</a></li>
                     <li><a href="#" class="icon fa-film"> 購票</a></li>
                 </ul>
+
+                <div id="word-tag">
+                    <div class="icon fa-bullhorn"> PTT 關聯<br></div>
+                    <div id='tag-cloud'></div>
+                </div>
+                
                 <br><br>
                 <section>
                     <div class='icon fa-gratipay'> 總分: {{data.rating}}</div>

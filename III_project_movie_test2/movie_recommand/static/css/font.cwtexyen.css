@@ -8,6 +8,13 @@
 */
 
 @import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+.t1-text-content p{
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 26px;
+    color: #ffc
+}
+
 .tl-timeline {
     font-family: 'cwTeXYen', sans-serif;
     font-size: 16px;

@@ -7,10 +7,20 @@ function doFirst() {
     // get choosen movie from sessionStorage
     var movieListString = storage.getItem('movieList');
     // movielist:1418834,1291549,1309046, split by , and sort
-    var movies = movieListString.split(',').sort();
+    var movies = movieListString.split(',');
+
+    var moviesINT = [];
+    for ( m=0; m<movies.length; m++){
+        var moviesint = parseInt(movies[m]);
+        moviesINT.push(moviesint);
+    }
+
+    var movieSort = moviesINT.sort(function(a,b){return a - b});
+
 
     // cancat movies for jquery gets' data
-    liststring = movies[0] + ',' + movies[1] + ',' + movies[2];
+    liststring = movieSort[0] + ',' + movieSort[1] + ',' + movieSort[2];
+//    console.log(liststring);
 
     // get by jquery
     $(document).ready(function(e) {
@@ -18,40 +28,49 @@ function doFirst() {
             url: "./recommandlists", // http://127.0.0.1:8000/AB103Movie/recommandlists?movielist=liststring
             data: { movielist: liststring }, // data = movies choosen by user
             success: function(data) {
-                createImages(data); // if get response successfully, sent return data to createImages function
+                createImages(data, liststring); // if get response successfully, sent return data to createImages function
             }
         }); // end of  $.ajax({
     }); // end of $(document).ready(function(e) {
 
 }
 
-function createImages(posters) {
+function createImages(posters, selectedmovies) {
     // return data contains 3 userchoosen + 12 recommand movies, seperate by space
     // recommand movies = posters.split(' ')[1] and split by , get reaommand movies list
-    posterimages = posters.split(' ')[1].split(',');
+    posterimages = posters.split(' ');
+//    console.log(posterimages);
+    select = selectedmovies.split(',');
 
-    for (i = 0; i < posterimages.length; i++) {
+//    for (i = 6; i < posterimages.length; i++) {
+    for (i = 6; i < 25; i++) {
+//        console.log(posterimages[i].split(',')[0]);
+        if (select.indexOf(posterimages[i].split(',')[0]) === 1){
+//            console.log(posterimages[i].split(',')[0]);
+            continue;
+        } else {
 
-        // create div tag for each movie
-        newtag = document.createElement('div');
+            // create div tag for each movie
+            newtag = document.createElement('div');
 
-        // create div tag for each movie
-        newATag = document.createElement('a');
-        // href = "/AB103Movie/introduction/detail?movieid=posterID"
-        newATag.href = "/AB103Movie/introduction/detail?movieid=" + posterimages[i];
+            // create div tag for each movie
+            newATag = document.createElement('a');
+            // href = "/AB103Movie/introduction/detail?movieid=posterID"
+            newATag.href = "/AB103Movie/introduction/detail?movieid=" + posterimages[i].split(',')[0];
 
-        // create img tag for each movie
-        var img = document.createElement('img');
-        // poster path = "/static/posters/posterID.jpg"
-        img.src = "/static/posters/" + posterimages[i] + ".jpg";
-        // img.href = "/AB103Movie/introduction/detail?movieid=" + posterimages[i];
+            // create img tag for each movie
+            var img = document.createElement('img');
+            // poster path = "/static/posters/posterID.jpg"
+            img.src = "/static/posters/" + posterimages[i].split(',')[0] + ".jpg";
+            // img.href = "/AB103Movie/introduction/detail?movieid=" + posterimages[i];
 
-        // put img tag into a
-        newATag.appendChild(img);
-        // put a tag into div
-        newtag.appendChild(newATag);
-        // put div into <section class="center slider" id="mainsection">
-        document.getElementById('mainsection').appendChild(newtag);
+            // put img tag into a
+            newATag.appendChild(img);
+            // put a tag into div
+            newtag.appendChild(newATag);
+            // put div into <section class="center slider" id="mainsection">
+            document.getElementById('mainsection').appendChild(newtag);
+        }
 
     } // end of for (i = 0; i < posterimages.length; i++) {
 
@@ -77,7 +96,7 @@ function createImages(posters) {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     autoplay: true,
-                    autoplaySpeed:1000,
+                    autoplaySpeed:1500,
                 }); //end of $(".center").slick({
             } // end of if ($(img).is(':visible')) {
     } // end of switch (document.readyState) {
@@ -88,7 +107,7 @@ function createImages(posters) {
         $(document).ready(function(e) {
             $.ajax({
                 url: "./typelists", // http://127.0.0.1:8000/AB103Movie/typelists?movielist=liststring
-                data: { typelist: posterimages[i] }, // data = each movie
+                data: { typelist: posterimages[i].split(',')[0] }, // data = each movie
                 success: function(data) {
                     // console.log(data);
                     createType(data, len); // if get response successfully, sent return data to createType function

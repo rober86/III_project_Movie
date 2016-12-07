@@ -971,7 +971,7 @@ ul.alt li {
 #preview {
     position: relative;
     padding: 1em;
-    height: 450px;
+    height: 100vh;
 }
 
 #preview .inner {
